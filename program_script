@@ -1,0 +1,34 @@
+The attributes of a football player are first-name, last-name, position, team and salary. In the
+file ex1.py write a function which takes a string argument, creates and returns a tuple
+containing details of the player specified by the string. The string should be assumed to have
+the format
+Chelsea Right-back Davide Zappacosta 20,000,000
+The tuple will contain the fields in the following order: team, position, first-name, last-name
+and salary. The tuple should contain exactly 5 items.
+Next, write a function that will print the details of a player on a single output line. It should
+take a tuple as its argument and print the details in fixed-width fields using a layout such as:
+Zappacosta, Davide 20,000,000 Right-back Chelsea
+The first-name must be displayed in a single fixed-width field using the format shown above
+so you will need to create a string containing the first-name in this format and print it in a
+fixed-width field. For example, you may assume that no first-name will contain more than 15
+characters when displayed in this format (similarly for last-name), no position will contain
+more than 15 characters, salary will contain at most 8 digits.
+In the main body of the program, write code which prompts the user for a filename and
+attempts to open the file whose name is supplied. If the file cannot be opened an error
+message should be output and the program should terminate; otherwise the program should
+read each line from the file and supply it to the player tuple-creation function, storing the
+tuples returned by this function in a list. You may assume that the file contains lines that
+conform to the format described for the argument to the function.
+After the data has been input the program should display details of all the players in the list
+in a neat table (using the function already written) then enter a loop in which the user should
+be given the option of requesting the display of (a) full details of (i) the player with a given 
+last-name or (ii) all players with a salary in a particular range (e.g. 20000 to 30000) or (b) the
+first- and last- names of all players of a team or quitting the options.
+The user should be told what has to be typed in order to select each option; the input options
+should be concise (e.g. ‘1’, ‘2’ etc. or ‘j’, ‘s’ etc.) in order to allow quick testing of the program.
+Note: Please assume that given last-names are unique.
+After getting out of the loop, first, the user should then be asked to supply the position and
+team. Second, the use should be asked to supply the position and lower and upper bounds of
+the salary range. In both cases, the list should then be searched, and the appropriate output
+to be displayed. The salary output should be sorted numerically in ascending order of salary.
+Appropriate messages should be displayed if a search produces no results. 
