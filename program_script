@@ -1,11 +1,11 @@
 The attributes of a football player are first-name, last-name, position, team and salary. In the
-file ex1.py write a function which takes a string argument, creates and returns a tuple
+file the function takes a string argument, creates and returns a tuple
 containing details of the player specified by the string. The string should be assumed to have
 the format
 Chelsea Right-back Davide Zappacosta 20,000,000
 The tuple will contain the fields in the following order: team, position, first-name, last-name
 and salary. The tuple should contain exactly 5 items.
-Next, write a function that will print the details of a player on a single output line. It should
+Next, a function that will print the details of a player on a single output line. It should
 take a tuple as its argument and print the details in fixed-width fields using a layout such as:
 Zappacosta, Davide 20,000,000 Right-back Chelsea
 The first-name must be displayed in a single fixed-width field using the format shown above
@@ -13,7 +13,7 @@ so you will need to create a string containing the first-name in this format and
 fixed-width field. For example, you may assume that no first-name will contain more than 15
 characters when displayed in this format (similarly for last-name), no position will contain
 more than 15 characters, salary will contain at most 8 digits.
-In the main body of the program, write code which prompts the user for a filename and
+In the main body of the program, the code prompts the user for a filename and
 attempts to open the file whose name is supplied. If the file cannot be opened an error
 message should be output and the program should terminate; otherwise the program should
 read each line from the file and supply it to the player tuple-creation function, storing the
